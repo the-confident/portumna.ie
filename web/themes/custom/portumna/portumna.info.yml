@@ -1,0 +1,14 @@
+name: Portumna
+type: theme
+description: 'Portumna custom theme'
+core_version_requirement: ^11
+base theme: stable9
+
+libraries:
+  - portumna/global
+
+regions:
+  header: 'Header'
+  breadcrumbs: 'Breadcrumbs'
+  content: 'Content'
+  footer: 'Footer'

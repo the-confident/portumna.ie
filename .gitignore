@@ -1,0 +1,25 @@
+# Ignore sensitive information
+/web/sites/*/settings.php
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/default/settings.local.php
+
+# Ignore Drupal's file directory
+/web/sites/*/files/
+/private/
+
+# Ignore SimpleTest multi-site environment.
+/web/sites/simpletest
+
+# Ignore local services.yml file
+web/sites/default/development.services.yml
+web/sites/default/services.yml
+
+# Ignore Docksal
+.docksal/
+
+# databases
+*.sql
+*.sql.gz
+
+.env
