@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.listing_page.field_banner
     - field.field.node.listing_page.field_content_blocks
     - field.field.node.listing_page.field_image
+    - field.field.node.listing_page.field_photo_credits
     - field.field.node.listing_page.field_teaser_text
     - node.type.listing_page
   module:
@@ -42,5 +43,6 @@ content:
     region: content
 hidden:
   field_banner: true
+  field_photo_credits: true
   field_teaser_text: true
   links: true
