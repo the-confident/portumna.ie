@@ -3,13 +3,16 @@ type: theme
 description: 'Portumna custom theme'
 core_version_requirement: ^11
 base theme: stable9
+logo: logo.png
 
 libraries:
   - portumna/global
 
 regions:
+  tabs: 'Tabs'
   header: 'Header'
   breadcrumbs: 'Breadcrumbs'
+  messages: 'Messages'
   content: 'Content'
   footer: 'Footer'
   disabled: 'Disabled'

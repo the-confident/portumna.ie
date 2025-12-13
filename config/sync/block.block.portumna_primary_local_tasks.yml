@@ -1,0 +1,22 @@
+uuid: c56c464e-bcd4-4a51-9d12-ec5046f1821c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - portumna
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: portumna_primary_local_tasks
+theme: portumna
+region: tabs
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

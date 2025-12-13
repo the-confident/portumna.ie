@@ -1,0 +1,19 @@
+uuid: fca259b2-b008-417e-bcc4-63be89906f68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cl_title
+    - paragraphs.paragraphs_type.content_list
+id: paragraph.content_list.field_cl_title
+field_name: field_cl_title
+entity_type: paragraph
+bundle: content_list
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
