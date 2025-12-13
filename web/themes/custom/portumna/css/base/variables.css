@@ -1,4 +1,38 @@
 :root {
-  --color-brand: #00652E;
-  --color-accent: #2756A6;
+  --color-accent: #00652e;
+  --color-accent-2: #2756a6;
+
+  --color-black: #222222;
+  --color-white: #ffffff;
+  --color-grey-lightest: #fafafa;
+  --color-grey-lighter: #eaeaea;
+  --color-grey-light: #cdcfd0;
+  --color-grey-medium: #b1b4b6;
+  --color-grey-dark: #505a5f;
+  --color-grey-darker: #444444;
+  --color-grey-darkest: #333333;
+
+  --drop-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  --drop-shadow-large: 0 24px 48px -16px rgba(0, 0, 0, 0.25);
+
+  --font-size-base: 1rem;
+  --font-size-large: 1.5rem;
+  --font-size-larger: 2rem;
+  --font-size-largest: 3rem;
+
+  --font-size-responsive-large: clamp(var(--font-size-base), 0.700rem + 1.333vw, var(--font-size-large));
+  --font-size-responsive-larger: clamp(var(--font-size-large), 1.200rem + 1.333vw, var(--font-size-larger));
+  --font-size-responsive-largest: clamp(var(--font-size-larger), 1.400rem + 2.667vw, var(--font-size-largest));
+
+  --line-height: 1.75;
+  --line-height-small: 1.2;
+
+  --spacing: var(--font-size-base);
+  --spacing-small: calc(var(--font-size-base) * 0.5);
+  --spacing-large: calc(var(--font-size-base) * 1.5rem);
+  --spacing-x-large: calc(var(--font-size-base) * 2rem);
+  --spacing-xx-large: calc(var(--font-size-base) * 2.5rem);
+  --spacing-xxx-large: calc(var(--font-size-base) * 3rem);
+
+  --border-radius: var(--font-size-large);
 }
