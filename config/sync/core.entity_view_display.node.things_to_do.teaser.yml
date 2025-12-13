@@ -1,0 +1,30 @@
+uuid: aacfbef0-08cc-4588-b4c7-322def25050c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.things_to_do.body
+    - node.type.things_to_do
+  module:
+    - text
+    - user
+id: node.things_to_do.teaser
+targetEntityType: node
+bundle: things_to_do
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
