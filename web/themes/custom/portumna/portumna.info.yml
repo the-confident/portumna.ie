@@ -12,3 +12,4 @@ regions:
   breadcrumbs: 'Breadcrumbs'
   content: 'Content'
   footer: 'Footer'
+  disabled: 'Disabled'
