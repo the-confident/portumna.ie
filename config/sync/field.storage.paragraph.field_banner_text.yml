@@ -1,4 +1,4 @@
-uuid: 05633971-3f40-4ae6-9494-c3a4b3132e6b
+uuid: 27227891-dfb7-455f-9f4f-78659008640d
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,9 @@ dependencies:
 id: paragraph.field_banner_text
 field_name: field_banner_text
 entity_type: paragraph
-type: string
+type: string_long
 settings:
-  max_length: 255
   case_sensitive: false
-  is_ascii: false
 module: core
 locked: false
 cardinality: 1

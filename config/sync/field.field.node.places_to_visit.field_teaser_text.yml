@@ -1,0 +1,19 @@
+uuid: 6c6d3069-a650-48de-964c-8d6c0d7bff29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.places_to_visit
+id: node.places_to_visit.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: places_to_visit
+label: 'Teaser Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

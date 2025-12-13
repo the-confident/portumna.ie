@@ -1,0 +1,19 @@
+uuid: b967c462-5f14-45a6-9736-033ec92c95a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_iwt_content
+field_name: field_iwt_content
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

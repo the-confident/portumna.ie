@@ -12,7 +12,7 @@ id: node.news.body
 field_name: body
 entity_type: node
 bundle: news
-label: Body
+label: 'About this news item'
 description: ''
 required: false
 translatable: false

@@ -1,0 +1,63 @@
+uuid: 12ace192-498e-433f-b4d7-9b1744874734
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.content_list.field_call_to_action
+    - field.field.paragraph.content_list.field_cl_content
+    - field.field.paragraph.content_list.field_cl_content_list
+    - field.field.paragraph.content_list.field_cl_title
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - layout_builder
+    - link
+    - text
+    - viewsreference
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.content_list.preview
+targetEntityType: paragraph
+bundle: content_list
+mode: preview
+content:
+  field_call_to_action:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cl_content:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_cl_content_list:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_cl_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

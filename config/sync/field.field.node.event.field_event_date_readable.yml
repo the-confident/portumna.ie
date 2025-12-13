@@ -1,0 +1,19 @@
+uuid: b866215c-02b4-44bb-bd99-42c575a8245e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_date_readable
+    - node.type.event
+id: node.event.field_event_date_readable
+field_name: field_event_date_readable
+entity_type: node
+bundle: event
+label: 'Event Date'
+description: 'Add the text here that we want to display for visitors, e.g. <strong>Monday 11th June, 9am to 1pm</strong>.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

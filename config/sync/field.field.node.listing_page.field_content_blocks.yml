@@ -6,7 +6,9 @@ dependencies:
     - field.storage.node.field_content_blocks
     - node.type.listing_page
     - paragraphs.paragraphs_type.content_list
+    - paragraphs.paragraphs_type.image_with_text
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
 id: node.listing_page.field_content_blocks
@@ -24,16 +26,24 @@ settings:
   handler_settings:
     target_bundles:
       text: text
+      image_with_text: image_with_text
+      video: video
       content_list: content_list
     negate: 0
     target_bundles_drag_drop:
       banner:
-        weight: -7
+        weight: -11
         enabled: false
       content_list:
-        weight: -5
+        weight: -7
+        enabled: true
+      image_with_text:
+        weight: -9
         enabled: true
       text:
-        weight: -6
+        weight: -10
+        enabled: true
+      video:
+        weight: -8
         enabled: true
 field_type: entity_reference_revisions

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.things_to_do.body
     - field.field.node.things_to_do.field_banner
     - field.field.node.things_to_do.field_image
+    - field.field.node.things_to_do.field_teaser_text
     - node.type.things_to_do
   module:
     - text
@@ -30,6 +31,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_teaser_text:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

@@ -5,9 +5,13 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_banner
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_date_readable
     - field.field.node.event.field_image
+    - field.field.node.event.field_teaser_text
     - node.type.event
   module:
+    - datetime
     - text
     - user
 id: node.event.default
@@ -22,6 +26,23 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
+  field_event_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_event_date_readable:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
   field_image:
     type: entity_reference_entity_view
     label: above
@@ -30,6 +51,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_teaser_text:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
     region: content
   links:
     settings: {  }

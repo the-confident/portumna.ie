@@ -12,7 +12,7 @@ id: node.things_to_do.body
 field_name: body
 entity_type: node
 bundle: things_to_do
-label: Body
+label: 'Information about this thing to do'
 description: ''
 required: false
 translatable: false

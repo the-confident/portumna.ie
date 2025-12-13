@@ -1,0 +1,19 @@
+uuid: 33259ec3-f850-448c-a974-c85565bdbb50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.news
+id: node.news.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: news
+label: 'Teaser Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

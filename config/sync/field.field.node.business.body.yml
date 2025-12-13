@@ -12,7 +12,7 @@ id: node.business.body
 field_name: body
 entity_type: node
 bundle: business
-label: Body
+label: 'About this business'
 description: ''
 required: false
 translatable: false

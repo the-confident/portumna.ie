@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.listing_page.field_banner
     - field.field.node.listing_page.field_content_blocks
     - field.field.node.listing_page.field_image
+    - field.field.node.listing_page.field_teaser_text
     - node.type.listing_page
   module:
     - entity_reference_revisions
@@ -32,6 +33,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_teaser_text:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
     region: content
 hidden:
   field_banner: true

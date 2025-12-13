@@ -4,13 +4,23 @@ status: true
 dependencies:
   config:
     - field.field.node.business.body
+    - field.field.node.business.field_address
     - field.field.node.business.field_banner
+    - field.field.node.business.field_email_address
+    - field.field.node.business.field_facebook
     - field.field.node.business.field_image
+    - field.field.node.business.field_instagram
+    - field.field.node.business.field_linkedin
+    - field.field.node.business.field_phone_number
+    - field.field.node.business.field_teaser_text
+    - field.field.node.business.field_tiktok
+    - field.field.node.business.field_website
+    - field.field.node.business.field_youtube
     - node.type.business
   module:
+    - link
     - media_library
     - paragraphs
-    - path
     - text
 id: node.business.default
 targetEntityType: node
@@ -19,7 +29,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 31
+    weight: 13
     region: content
     settings:
       rows: 9
@@ -27,11 +37,13 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  created:
-    type: datetime_timestamp
-    weight: 10
+  field_address:
+    type: string_textarea
+    weight: 4
     region: content
-    settings: {  }
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   field_banner:
     type: paragraphs
@@ -53,56 +65,103 @@ content:
         convert: '0'
         duplicate: duplicate
     third_party_settings: {  }
+  field_email_address:
+    type: email_default
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_facebook:
+    type: link_default
+    weight: 8
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   field_image:
     type: media_library_widget
-    weight: 121
+    weight: 2
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 15
+  field_instagram:
+    type: link_default
+    weight: 9
     region: content
     settings:
-      display_label: true
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_linkedin:
+    type: link_default
+    weight: 12
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_phone_number:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_teaser_text:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_tiktok:
+    type: link_default
+    weight: 10
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_website:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_youtube:
+    type: link_default
+    weight: 11
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 120
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 16
+    weight: 14
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true
