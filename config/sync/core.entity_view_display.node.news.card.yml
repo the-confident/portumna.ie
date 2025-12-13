@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_banner
     - field.field.node.news.field_image
+    - field.field.node.news.field_published_date
     - field.field.node.news.field_teaser_text
     - node.type.news
   module:
@@ -33,5 +34,6 @@ content:
 hidden:
   body: true
   field_banner: true
+  field_published_date: true
   field_teaser_text: true
   links: true
