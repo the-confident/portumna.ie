@@ -1,0 +1,38 @@
+uuid: 06add3ba-3428-44fd-90ef-d668fdd97791
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.places_to_visit.body
+    - field.field.node.places_to_visit.field_banner
+    - field.field.node.places_to_visit.field_image
+    - node.type.places_to_visit
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.places_to_visit.full
+targetEntityType: node
+bundle: places_to_visit
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_banner:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_image: true
+  links: true

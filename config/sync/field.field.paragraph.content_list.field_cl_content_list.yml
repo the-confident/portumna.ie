@@ -1,0 +1,34 @@
+uuid: 5e028623-4d82-4e0f-a89e-946ffb21ad76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cl_content_list
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - viewsreference
+id: paragraph.content_list.field_cl_content_list
+field_name: field_cl_content_list
+entity_type: paragraph
+bundle: content_list
+label: 'Content List'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    business_directory: business_directory
+    events: events
+    news: news
+    places_to_visit: places_to_visit
+    things_to_do: things_to_do
+  enabled_settings: {  }
+field_type: viewsreference

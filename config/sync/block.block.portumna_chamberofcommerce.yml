@@ -1,0 +1,25 @@
+uuid: dc652ce0-e8ff-4e67-ac20-3e0bf1552243
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0d7867d7-094c-48b9-b64b-4f9f2ffd9259'
+  module:
+    - block_content
+  theme:
+    - portumna
+id: portumna_chamberofcommerce
+theme: portumna
+region: footer
+weight: -8
+provider: null
+plugin: 'block_content:0d7867d7-094c-48b9-b64b-4f9f2ffd9259'
+settings:
+  id: 'block_content:0d7867d7-094c-48b9-b64b-4f9f2ffd9259'
+  label: 'Chamber of Commerce'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

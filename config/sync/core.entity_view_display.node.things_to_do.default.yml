@@ -1,0 +1,40 @@
+uuid: d97fd04b-5588-4f01-a538-9956ac164f10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.things_to_do.body
+    - field.field.node.things_to_do.field_banner
+    - field.field.node.things_to_do.field_image
+    - node.type.things_to_do
+  module:
+    - text
+    - user
+id: node.things_to_do.default
+targetEntityType: node
+bundle: things_to_do
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_banner: true

@@ -1,0 +1,37 @@
+uuid: 63dfa614-7be8-46c1-9ad9-8919c8ca0598
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - node.type.event
+    - paragraphs.paragraphs_type.banner
+  module:
+    - entity_reference_revisions
+id: node.event.field_banner
+field_name: field_banner
+entity_type: node
+bundle: event
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner: banner
+    negate: 0
+    target_bundles_drag_drop:
+      banner:
+        weight: 4
+        enabled: true
+      content_list:
+        weight: 5
+        enabled: false
+      text:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,35 @@
+uuid: b18fcfb5-df07-4d59-8404-75d2cd7cb901
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.places_to_visit.body
+    - field.field.node.places_to_visit.field_banner
+    - field.field.node.places_to_visit.field_image
+    - node.type.places_to_visit
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.places_to_visit.card
+targetEntityType: node
+bundle: places_to_visit
+mode: card
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_banner: true
+  links: true

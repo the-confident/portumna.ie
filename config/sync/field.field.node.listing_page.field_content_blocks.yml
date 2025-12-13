@@ -1,0 +1,39 @@
+uuid: fb018170-7fb5-4b13-ae93-7609c699af3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_blocks
+    - node.type.listing_page
+    - paragraphs.paragraphs_type.content_list
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.listing_page.field_content_blocks
+field_name: field_content_blocks
+entity_type: node
+bundle: listing_page
+label: 'Content Blocks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+      content_list: content_list
+    negate: 0
+    target_bundles_drag_drop:
+      banner:
+        weight: -7
+        enabled: false
+      content_list:
+        weight: -5
+        enabled: true
+      text:
+        weight: -6
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,44 @@
+uuid: 2f9af087-812e-4546-b89d-646aa5a4fb90
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.listing_page.field_banner
+    - field.field.node.listing_page.field_content_blocks
+    - field.field.node.listing_page.field_image
+    - node.type.listing_page
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.listing_page.full
+targetEntityType: node
+bundle: listing_page
+mode: full
+content:
+  field_banner:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_content_blocks:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_image: true
+  links: true

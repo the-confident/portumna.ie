@@ -1,0 +1,22 @@
+uuid: 0969f93b-e3ec-4e01-8a43-6dd6d8c32542
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.places_to_visit
+id: node.places_to_visit.promote
+field_name: promote
+entity_type: node
+bundle: places_to_visit
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

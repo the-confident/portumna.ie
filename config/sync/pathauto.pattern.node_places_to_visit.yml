@@ -1,0 +1,22 @@
+uuid: 14d40a70-110e-4e50-bbfb-c6c61db35ddc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_places_to_visit
+label: 'Node: Places to Visit'
+type: 'canonical_entities:node'
+pattern: '/places-to-visit/[node:title]'
+selection_criteria:
+  63cc8797-7d9a-44ac-8cf1-0367dbf7f54a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 63cc8797-7d9a-44ac-8cf1-0367dbf7f54a
+    context_mapping:
+      node: node
+    bundles:
+      places_to_visit: places_to_visit
+selection_logic: and
+weight: -5
+relationships: {  }
