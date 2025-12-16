@@ -29,10 +29,26 @@
 
   --spacing: var(--font-size-base);
   --spacing-small: calc(var(--font-size-base) * 0.5);
-  --spacing-large: calc(var(--font-size-base) * 1.5rem);
-  --spacing-x-large: calc(var(--font-size-base) * 2rem);
-  --spacing-xx-large: calc(var(--font-size-base) * 2.5rem);
-  --spacing-xxx-large: calc(var(--font-size-base) * 3rem);
+  --spacing-large: calc(var(--font-size-base) * 1.5);
+  --spacing-x-large: calc(var(--font-size-base) * 2);
+  --spacing-xx-large: calc(var(--font-size-base) * 2.5);
+  --spacing-xxx-large: calc(var(--font-size-base) * 3);
+  --spacing-gap: var(--spacing-xxx-large);
+
+  --width-container: 1200px;
+  --width-small: 500px;
+  --width-medium: 768px;
+  --width-large: 960px;
 
   --border-radius: var(--font-size-large);
+  --border-color: var(--color-accent);
+  --border-width: 3px;
+  --border-style: solid;
+  --border: var(--border-width) var(--border-style) var(--border-color);
+  --border-accent-2: var(--border-width) var(--border-style) var(--color-accent-2);
+  --border-small: 1px var(--border-style) var(--border-color);
+  --border-small-white: 2px var(--border-style) var(--color-white);
+  --border-white: var(--border-width) var(--border-style) var(--color-white);
+
+  --transition-time: 0.3s;
 }

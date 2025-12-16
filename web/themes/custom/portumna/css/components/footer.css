@@ -1,0 +1,36 @@
+.footer {
+  padding-block: var(--spacing-large);
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.region-footer {
+  display: grid;
+  gap: var(--spacing-gap);
+  grid-template-columns: 1fr;;
+}
+
+.footer a,
+.footer .menu a.is-active {
+  color: var(--color-white);
+  &:focus-visible {
+    outline-color: var(--color-white);
+  }
+}
+
+.footer ul,
+.footer ul.menu {
+  list-style: disc;
+  margin-inline-start: var(--spacing);
+  padding-inline-start: var(--spacing);
+}
+
+.footer h2 {
+  border-block-end: var(--border-white);
+}
+
+@media screen and (min-width: 768px) {
+  .region-footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

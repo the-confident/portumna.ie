@@ -2,14 +2,14 @@ name: Portumna
 type: theme
 description: 'Portumna custom theme'
 core_version_requirement: ^11
-base theme: stable9
+base theme: portumna_base
 logo: logo.png
 
 libraries:
   - portumna/global
 
 regions:
-  tabs: 'Tabs'
+  off_canvas: 'Off Canvas'
   header: 'Header'
   breadcrumbs: 'Breadcrumbs'
   messages: 'Messages'

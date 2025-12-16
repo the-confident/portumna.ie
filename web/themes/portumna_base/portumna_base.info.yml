@@ -1,0 +1,24 @@
+name: portumna_base
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - portumna_base/base
+  - portumna_base/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - portumna_base/user
+  core/drupal.dropbutton:
+    - portumna_base/dropbutton
+  core/drupal.dialog:
+    - portumna_base/dialog
+  file/drupal.file:
+    - portumna_base/file
+  core/drupal.progress:
+    - portumna_base/progress
+  core/drupal.tablesort:
+    - portumna_base/drupal.tablesort
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.2.10'

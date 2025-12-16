@@ -1,0 +1,16 @@
+.layout-container {
+  max-width: var(--width-container);
+  margin-inline: auto;
+}
+
+.layout-container--small {
+  max-width: var(--width-small);
+}
+
+.layout-container--medium {
+  max-width: var(--width-medium);
+}
+
+.layout-container--large {
+  max-width: var(--width-large);
+}

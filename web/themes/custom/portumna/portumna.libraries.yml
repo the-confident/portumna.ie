@@ -1,5 +1,32 @@
 global:
   css:
     theme:
+      css/base/fonts.css: {}
       css/base/variables.css: {}
       css/base/base.css: {}
+      css/utilities/layout.css: {}
+
+header:
+  css:
+    theme:
+      css/components/header.css: {}
+  js:
+    js/header.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
+
+footer:
+  css:
+    theme:
+      css/components/footer.css: {}
+
+off-canvas:
+  css:
+    theme:
+      css/components/off-canvas.css: {}
+
+breadcrumbs:
+  css:
+    theme:
+      css/components/breadcrumbs.css: {}

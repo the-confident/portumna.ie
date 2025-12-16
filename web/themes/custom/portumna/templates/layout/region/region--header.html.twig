@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+{% if region == 'header' %}
+  {{ attach_library('portumna/header') }}
+{% endif %}
+
+{%
+  set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+  ]
+%}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {{ content }}
+    <div class="header__off-canvas-toggle">
+      <button class="header__off-canvas-button" aria-label="{{ 'Toggle menu'|t }}" aria-expanded="false" aria-controls="off-canvas">
+        {{ 'MENU'|t }}
+      </button>
+    </div>
+  </div>
+{% endif %}
