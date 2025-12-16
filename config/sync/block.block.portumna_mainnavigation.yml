@@ -1,0 +1,25 @@
+uuid: 08cf66ad-8d7f-4f93-9903-a0ffbe0ec464
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - portumna
+id: portumna_mainnavigation
+theme: portumna
+region: off_canvas
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

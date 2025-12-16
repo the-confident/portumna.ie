@@ -1,0 +1,25 @@
+uuid: e7af42c7-aba4-44a2-8822-bf49c6fd3963
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - portumna_base
+id: portumna_base_mainnavigation
+theme: portumna_base
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

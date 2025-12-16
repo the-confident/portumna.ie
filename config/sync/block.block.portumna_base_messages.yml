@@ -1,0 +1,22 @@
+uuid: a92142f5-b5bb-40b4-a52c-d783fbdc1ad1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portumna_base
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: portumna_base_messages
+theme: portumna_base
+region: sidebar_first
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

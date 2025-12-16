@@ -1,0 +1,23 @@
+uuid: 543f985b-8b06-4754-8b8a-a2b38ea5b2df
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - portumna_base
+_core:
+  default_config_hash: pbbed0hdqGDF-_QWVVTWRAwgDIotFuAvWH5mWUZu0fA
+id: portumna_base_search_form_wide
+theme: portumna_base
+region: sidebar_first
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: da149b1a-f2ac-492b-b3a6-2b2bcba63e49
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portumna_base
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: portumna_base_powered
+theme: portumna_base
+region: sidebar_first
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

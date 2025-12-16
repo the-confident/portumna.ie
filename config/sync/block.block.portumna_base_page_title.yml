@@ -1,0 +1,20 @@
+uuid: 10022319-7c9e-4c57-815f-f011b5881a3c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - portumna_base
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: portumna_base_page_title
+theme: portumna_base
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

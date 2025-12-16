@@ -1,15 +1,15 @@
-uuid: c56c464e-bcd4-4a51-9d12-ec5046f1821c
+uuid: dd9c0b63-6440-42e5-9bf8-841c9a2f5868
 langcode: en
 status: true
 dependencies:
   theme:
-    - portumna
+    - portumna_base
 _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
-id: portumna_primary_local_tasks
-theme: portumna
-region: disabled
-weight: -2
+id: portumna_base_primary_local_tasks
+theme: portumna_base
+region: sidebar_first
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:

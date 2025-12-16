@@ -1,15 +1,15 @@
-uuid: 722715d5-0f08-41bb-83c4-4d3dc9a01b99
+uuid: 9ed92922-c259-4d03-8fec-266b8191f3ff
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - portumna
+    - portumna_base
 _core:
   default_config_hash: '-OAAZDw1OR_UyAEPEKX0Hu4LaZD149vW9PmMnIC-v0o'
-id: portumna_site_branding
-theme: portumna
+id: portumna_base_site_branding
+theme: portumna_base
 region: header
 weight: -8
 provider: null
@@ -20,6 +20,6 @@ settings:
   label_display: '0'
   provider: system
   use_site_logo: true
-  use_site_name: false
-  use_site_slogan: false
+  use_site_name: true
+  use_site_slogan: true
 visibility: {  }

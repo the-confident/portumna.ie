@@ -1,0 +1,22 @@
+uuid: b7192efd-3216-4173-9b3b-04bf28abe0c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portumna_base
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: portumna_base_content
+theme: portumna_base
+region: content
+weight: -8
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

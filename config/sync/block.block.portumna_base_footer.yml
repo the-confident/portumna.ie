@@ -1,0 +1,25 @@
+uuid: 3a7c8b40-3a1c-4bd6-b087-16d0da9513da
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - portumna_base
+id: portumna_base_footer
+theme: portumna_base
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Quick Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }
