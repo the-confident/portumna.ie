@@ -30,3 +30,8 @@ breadcrumbs:
   css:
     theme:
       css/components/breadcrumbs.css: {}
+
+card:
+  css:
+    theme:
+      css/components/card.css: {}

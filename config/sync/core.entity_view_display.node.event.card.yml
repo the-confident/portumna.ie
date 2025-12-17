@@ -24,17 +24,24 @@ bundle: event
 mode: card
 content:
   field_image:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
+      view_mode: card
+      link: false
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_teaser_text:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   body: true
   field_banner: true
   field_event_date: true
   field_event_date_readable: true
-  field_teaser_text: true
   links: true

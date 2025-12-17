@@ -7,17 +7,17 @@ _core:
 name: wide
 label: 'Wide (1090)'
 effects:
-  09959c15-59ce-4f6d-90df-e2d7cf32bce5:
-    uuid: 09959c15-59ce-4f6d-90df-e2d7cf32bce5
-    id: image_scale
-    weight: 1
-    data:
-      width: 1090
-      height: null
-      upscale: false
   294c5f76-42a4-43ce-82c2-81c2f4723da0:
     uuid: 294c5f76-42a4-43ce-82c2-81c2f4723da0
     id: image_convert_avif
     weight: 2
     data:
       extension: webp
+  8cf4a8db-a51b-4c0a-993f-91e4e9d54b6b:
+    uuid: 8cf4a8db-a51b-4c0a-993f-91e4e9d54b6b
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 1500
+      height: 600
+      anchor: center-center
