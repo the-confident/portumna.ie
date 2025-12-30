@@ -29,7 +29,7 @@
   border-block-end: var(--border-white);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 37.5rem) {
   .region-footer {
     grid-template-columns: repeat(3, 1fr);
   }
