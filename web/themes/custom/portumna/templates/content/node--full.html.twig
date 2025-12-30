@@ -65,6 +65,10 @@
   {% set  has_banner = TRUE %}
 {% endif %}
 
+{% if node.field_image.value  %}
+  {% set has_image = TRUE %}
+{% endif %}
+
 {%
   set classes = [
     'full-page',
@@ -75,19 +79,32 @@
 %}
 
 {{ attach_library('portumna_base/node') }}
+{{ attach_library('portumna/full-page') }}
 
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-    {% if has_banner != TRUE %}
-      <h1{{ title_attributes }}>
-        {{ label }}
-      </h1>
-    {% endif %}
-  {{ title_suffix }}
+  {% if has_banner %}
+    <div class="full-page__media">
+      {{ content.field_banner }}
+    </div>
+  {% endif %}
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
+  {% if has_banner != TRUE and has_image %}
+    <div class="full-page__media">
+      {{ content.field_image }}
+    </div>
+  {% endif %}
+
+  <div{{ content_attributes.addClass('node__content', 'full-page__content') }}>
+    {{ title_prefix }}
+      {% if has_banner != TRUE %}
+        <h1{{ title_attributes }}>
+          {{ label }}
+        </h1>
+      {% endif %}
+    {{ title_suffix }}
+
+    {{ content|without('field_banner', 'field_image') }}
   </div>
 
 </article>

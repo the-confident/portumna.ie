@@ -1,0 +1,21 @@
+.banner__content {
+  font-weight: bold;
+  padding: var(--spacing-xx-large);
+  background-color: var(--color-white);
+  border: var(--border);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  box-shadow: var(--drop-shadow);
+}
+
+.banner .field--name-field-banner-text {
+  font-size: var(--font-size-responsive-large);
+}
+
+@media screen and (min-width: 48rem) {
+  .banner__content {
+    --translate-y: -6rem;
+    margin-block-end: var(--translate-y);
+    width: 60%;
+    transform: translateY(var(--translate-y));
+  }
+}

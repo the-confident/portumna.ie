@@ -1,0 +1,14 @@
+.breadcrumb {
+  margin-block-end: var(--spacing-xxx-large);
+  font-size: var(--font-size-small);
+  background-color: var(--color-grey-lightest);
+  padding: var(--spacing-small) var(--spacing);
+  border: var(--border);
+  border-block-start: 0;
+}
+
+.breadcrumb a {
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: bold;
+}

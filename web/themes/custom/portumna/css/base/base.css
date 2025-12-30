@@ -41,6 +41,18 @@ h6,
   line-height: var(--line-height-small);
 }
 
+h1 {
+  font-size: var(--font-size-responsive-largest);
+}
+
+h2 {
+  font-size: var(--font-size-responsive-larger);
+}
+
+h3 {
+  font-size: var(--font-size-responsive-large);
+}
+
 img {
   display: block;
   max-width: 100%;

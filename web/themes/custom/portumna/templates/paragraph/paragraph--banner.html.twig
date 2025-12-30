@@ -1,0 +1,22 @@
+{{ attach_library('portumna/banner') }}
+
+{% set classes = [
+    'banner'
+  ]
+%}
+
+<article{{ attributes.addClass(classes) }}>
+  <div class="banner__image">
+    {{ content.field_banner_image }}
+  </div>
+
+  <div class="banner__content">
+
+    {% if paragraph.field_banner_title.value %}
+      <h1>{{ content.field_banner_title.0['#context'].value }}</h1>
+    {% endif %}
+
+    {{ content|without('field_banner_image', 'field_banner_title') }}
+
+  </div>
+</article>

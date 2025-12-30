@@ -3,6 +3,8 @@
   background-color: var(--color-grey-lightest);
   border-block-end: var(--border);
   box-shadow: var(--drop-shadow);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
 .card__image img {

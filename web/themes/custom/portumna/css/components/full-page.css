@@ -1,0 +1,24 @@
+.full-page__content {
+  margin-block-start: var(--spacing-xxx-large);
+  padding-block-end: var(--spacing-xxx-large);
+}
+
+.full-page__content > * + * {
+  margin-block-start: var(--spacing-xxx-large);
+}
+
+.full-page:not(.full-page--listing-page) .full-page__content {
+  max-width: 80ch;
+}
+
+.full-page .field--name-field-published-date,
+.full-page .field--name-field-event-date-readable {
+  padding: var(--spacing);
+  background-color: var(--color-grey-lightest);
+  border: var(--border-small);
+  font-weight: bold;
+}
+
+.full-page__media img {
+  box-shadow: var(--drop-shadow);
+}
