@@ -15,7 +15,7 @@ function portumna_preprocess_paragraph(&$variables) {
     $variables['#attached']['library'][] = 'portumna/content-list';
     $variables['attributes']['class'][] = 'content-list';
 
-    if (isset($variables['content']['field_cl_title'])) {
+    if (isset($variables['content']['field_cl_title'][0])) {
       // CHange the title level to h2 rather than plain text.
       $variables['content']['field_cl_title']['#prefix'] = '<h2 class="content-list__title">';
       $variables['content']['field_cl_title']['#suffix'] = '</h2>';

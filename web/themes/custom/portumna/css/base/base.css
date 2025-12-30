@@ -92,3 +92,10 @@ select:focus-visible {
 .padding-y {
   padding-block: var(--spacing);
 }
+
+.field--name-field-photo-credits {
+  margin-block-start: var(--spacing-xxx-large);
+  padding: var(--spacing);
+  font-size: var(--font-size-smaller);
+  background-color: var(--color-grey-lighter);
+}
