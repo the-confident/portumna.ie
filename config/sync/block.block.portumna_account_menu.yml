@@ -13,7 +13,7 @@ _core:
 id: portumna_account_menu
 theme: portumna
 region: disabled
-weight: -6
+weight: -5
 provider: null
 plugin: 'system_menu_block:account'
 settings:

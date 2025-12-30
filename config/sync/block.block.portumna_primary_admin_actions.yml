@@ -9,7 +9,7 @@ _core:
 id: portumna_primary_admin_actions
 theme: portumna
 region: disabled
-weight: -7
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:

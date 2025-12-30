@@ -3,11 +3,21 @@ langcode: en
 status: true
 dependencies:
   config:
+    - media.type.image
+    - media.type.remote_video
+    - node.type.business
+    - node.type.event
+    - node.type.listing_page
+    - node.type.news
     - node.type.page
+    - node.type.places_to_visit
+    - node.type.things_to_do
     - taxonomy.vocabulary.tags
   module:
     - contextual
     - file
+    - media
+    - navigation
     - node
     - path
     - system
@@ -23,16 +33,89 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access media overview'
+  - 'access navigation'
+  - 'access user profiles'
   - 'administer url aliases'
+  - 'create business content'
+  - 'create event content'
+  - 'create image media'
+  - 'create listing_page content'
+  - 'create news content'
   - 'create page content'
+  - 'create places_to_visit content'
+  - 'create remote_video media'
   - 'create terms in tags'
+  - 'create things_to_do content'
   - 'create url aliases'
+  - 'delete any business content'
+  - 'delete any event content'
+  - 'delete any image media'
+  - 'delete any image media revisions'
+  - 'delete any listing_page content'
+  - 'delete any media'
+  - 'delete any news content'
+  - 'delete any places_to_visit content'
+  - 'delete any remote_video media'
+  - 'delete any remote_video media revisions'
+  - 'delete any things_to_do content'
+  - 'delete business revisions'
+  - 'delete event revisions'
+  - 'delete listing_page revisions'
+  - 'delete media'
+  - 'delete news revisions'
+  - 'delete own business content'
+  - 'delete own event content'
   - 'delete own files'
+  - 'delete own image media'
+  - 'delete own listing_page content'
+  - 'delete own news content'
   - 'delete own page content'
+  - 'delete own places_to_visit content'
+  - 'delete own remote_video media'
+  - 'delete own things_to_do content'
   - 'delete page revisions'
+  - 'delete places_to_visit revisions'
+  - 'delete things_to_do revisions'
+  - 'edit any business content'
+  - 'edit any event content'
+  - 'edit any image media'
+  - 'edit any listing_page content'
+  - 'edit any news content'
+  - 'edit any places_to_visit content'
+  - 'edit any remote_video media'
+  - 'edit any things_to_do content'
+  - 'edit own business content'
+  - 'edit own event content'
+  - 'edit own image media'
+  - 'edit own listing_page content'
+  - 'edit own news content'
   - 'edit own page content'
+  - 'edit own places_to_visit content'
+  - 'edit own remote_video media'
+  - 'edit own things_to_do content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'revert any image media revisions'
+  - 'revert any remote_video media revisions'
+  - 'revert business revisions'
+  - 'revert event revisions'
+  - 'revert listing_page revisions'
+  - 'revert news revisions'
+  - 'revert places_to_visit revisions'
+  - 'revert things_to_do revisions'
+  - 'update any media'
+  - 'update media'
+  - 'view all media revisions'
   - 'view all revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
+  - 'view business revisions'
+  - 'view event revisions'
+  - 'view listing_page revisions'
+  - 'view news revisions'
   - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view places_to_visit revisions'
   - 'view the administration theme'
+  - 'view things_to_do revisions'
