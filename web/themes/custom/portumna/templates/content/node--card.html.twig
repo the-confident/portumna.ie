@@ -71,6 +71,12 @@
 {{ attach_library('portumna_base/node') }}
 {{ attach_library('portumna/card') }}
 
+{% set heading_level = heading_level|default('h2') %}
+
+{% if node.view.current_display == 'block_cards' %}
+  {% set heading_level = 'h3' %}
+{% endif %}
+
 <article{{ attributes.addClass(classes) }}>
 
   {% if node.field_image.value %}
@@ -81,11 +87,9 @@
 
   <div{{ content_attributes.addClass('card__content') }}>
     {{ title_prefix }}
-    {% if label and not page %}
-      <h2{{ title_attributes.addClass('card__title') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-    {% endif %}
+    <{{ heading_level }}{{ title_attributes.addClass('card__title') }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </{{ heading_level }}>
     {{ title_suffix }}
     {{ content|without('field_image') }}
   </div>

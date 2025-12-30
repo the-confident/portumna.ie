@@ -2,6 +2,7 @@
   height: 100%;
   background-color: var(--color-grey-lightest);
   border-block-end: var(--border);
+  box-shadow: var(--drop-shadow);
 }
 
 .card__image img {

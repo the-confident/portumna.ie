@@ -35,3 +35,8 @@ card:
   css:
     theme:
       css/components/card.css: {}
+
+content-list:
+  css:
+    theme:
+      css/components/content-list.css: {}

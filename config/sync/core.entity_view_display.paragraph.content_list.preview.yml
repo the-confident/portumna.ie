@@ -33,7 +33,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
   field_cl_content:
     type: text_trimmed
@@ -50,7 +50,7 @@ content:
       plugin_types:
         - block
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_cl_title:
     type: string
@@ -58,6 +58,6 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
+    weight: 0
     region: content
 hidden: {  }
