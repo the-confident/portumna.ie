@@ -10,8 +10,8 @@ field_name: field_teaser_text
 entity_type: node
 bundle: places_to_visit
 label: 'Teaser Text'
-description: ''
-required: false
+description: 'This field is used at the top of the page, in listing pages, and also when the page is shared on social media or appears in search results (e.g. in Google).'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
