@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.business.field_instagram
     - field.field.node.business.field_linkedin
     - field.field.node.business.field_phone_number
+    - field.field.node.business.field_photo_credits
     - field.field.node.business.field_teaser_text
     - field.field.node.business.field_tiktok
     - field.field.node.business.field_website
@@ -101,6 +102,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_photo_credits:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
     region: content
   field_tiktok:
     type: link

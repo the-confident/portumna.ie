@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_readable
     - field.field.node.event.field_image
+    - field.field.node.event.field_photo_credits
     - field.field.node.event.field_teaser_text
     - node.type.event
   module:
@@ -44,4 +45,5 @@ hidden:
   field_banner: true
   field_event_date: true
   field_event_date_readable: true
+  field_photo_credits: true
   links: true

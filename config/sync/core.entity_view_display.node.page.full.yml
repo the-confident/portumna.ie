@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.page.body
     - field.field.node.page.field_banner
+    - field.field.node.page.field_photo_credits
     - field.field.node.page.field_teaser_text
     - node.type.page
   module:
@@ -32,6 +33,13 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_photo_credits:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   field_teaser_text: true

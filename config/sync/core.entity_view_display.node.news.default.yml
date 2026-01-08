@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_banner
     - field.field.node.news.field_image
+    - field.field.node.news.field_photo_credits
     - field.field.node.news.field_published_date
     - field.field.node.news.field_teaser_text
     - node.type.news
@@ -35,5 +36,6 @@ content:
 hidden:
   body: true
   field_banner: true
+  field_photo_credits: true
   field_published_date: true
   links: true

@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_readable
     - field.field.node.event.field_image
+    - field.field.node.event.field_photo_credits
     - field.field.node.event.field_teaser_text
     - node.type.event
   module:
@@ -52,6 +53,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_photo_credits:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden:
   field_event_date: true

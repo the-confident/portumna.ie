@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.news.body
     - field.field.node.news.field_banner
     - field.field.node.news.field_image
+    - field.field.node.news.field_photo_credits
     - field.field.node.news.field_published_date
     - field.field.node.news.field_teaser_text
     - node.type.news
@@ -44,6 +45,13 @@ content:
       link: false
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_photo_credits:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_published_date:
     type: datetime_default

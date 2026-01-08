@@ -1,0 +1,19 @@
+uuid: e92bf3d6-fca9-4192-b207-b3aa80c32c14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo_credits
+    - node.type.event
+id: node.event.field_photo_credits
+field_name: field_photo_credits
+entity_type: node
+bundle: event
+label: 'Photo credits for this page'
+description: 'If there are any photos on this page, list the credit here, e.g. <strong>Banner image courtesy of Mark Conroy</strong>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

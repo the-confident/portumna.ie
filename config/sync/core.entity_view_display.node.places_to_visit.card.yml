@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.places_to_visit.body
     - field.field.node.places_to_visit.field_banner
     - field.field.node.places_to_visit.field_image
+    - field.field.node.places_to_visit.field_photo_credits
     - field.field.node.places_to_visit.field_teaser_text
     - node.type.places_to_visit
   module:
@@ -40,4 +41,5 @@ content:
 hidden:
   body: true
   field_banner: true
+  field_photo_credits: true
   links: true

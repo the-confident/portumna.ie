@@ -7,11 +7,11 @@ dependencies:
     - field.field.node.things_to_do.body
     - field.field.node.things_to_do.field_banner
     - field.field.node.things_to_do.field_image
+    - field.field.node.things_to_do.field_photo_credits
     - field.field.node.things_to_do.field_teaser_text
     - node.type.things_to_do
   module:
     - layout_builder
-    - text
     - user
 third_party_settings:
   layout_builder:
@@ -22,13 +22,6 @@ targetEntityType: node
 bundle: things_to_do
 mode: card
 content:
-  body:
-    type: text_default
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
   field_image:
     type: entity_reference_entity_view
     label: hidden
@@ -38,7 +31,15 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_teaser_text:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
+  body: true
   field_banner: true
-  field_teaser_text: true
+  field_photo_credits: true
   links: true

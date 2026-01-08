@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_banner
+    - field.field.node.page.field_photo_credits
     - field.field.node.page.field_teaser_text
     - node.type.page
   module:
@@ -22,17 +23,20 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
   field_teaser_text:
     type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 2
     region: content
   links:
-    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   field_banner: true
+  field_photo_credits: true

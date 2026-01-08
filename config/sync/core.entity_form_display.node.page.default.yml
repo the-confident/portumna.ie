@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_banner
+    - field.field.node.page.field_photo_credits
     - field.field.node.page.field_teaser_text
     - node.type.page
   module:
@@ -48,6 +49,14 @@ content:
         convert: '0'
         duplicate: duplicate
     third_party_settings: {  }
+  field_photo_credits:
+    type: string_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_teaser_text:
     type: string_textarea
     weight: 2
@@ -58,13 +67,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 4
+    weight: 5
     region: content
     settings:
       display_label: true

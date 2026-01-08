@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.things_to_do.body
     - field.field.node.things_to_do.field_banner
     - field.field.node.things_to_do.field_image
+    - field.field.node.things_to_do.field_photo_credits
     - field.field.node.things_to_do.field_teaser_text
     - node.type.things_to_do
   module:
@@ -33,4 +34,5 @@ content:
 hidden:
   field_banner: true
   field_image: true
+  field_photo_credits: true
   field_teaser_text: true

@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.business.field_instagram
     - field.field.node.business.field_linkedin
     - field.field.node.business.field_phone_number
+    - field.field.node.business.field_photo_credits
     - field.field.node.business.field_teaser_text
     - field.field.node.business.field_tiktok
     - field.field.node.business.field_website
@@ -55,6 +56,7 @@ hidden:
   field_instagram: true
   field_linkedin: true
   field_phone_number: true
+  field_photo_credits: true
   field_tiktok: true
   field_website: true
   field_youtube: true
