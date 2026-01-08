@@ -1,0 +1,16 @@
+uuid: 269227ca-cb21-4822-a07e-8f5aabb776cf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  hreflang_xdefault: en-IE
+  og_description: '[node:field_teaser_text]'
+  og_site_name: '[site:name]'
+  og_title: '[current-page:title] | [site:name]'
+  og_url: '[current-page:url]'
+  title: '[current-page:title] | [site:name]'

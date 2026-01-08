@@ -22,3 +22,7 @@
 .full-page__media img {
   box-shadow: var(--drop-shadow);
 }
+
+.full-page .field--name-field-teaser-text {
+  font-size: var(--font-size-large);
+}

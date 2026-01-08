@@ -1,0 +1,24 @@
+uuid: 1c62f11a-a122-45f5-8671-557a752ae368
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  article_modified_time: '[node:updated]'
+  article_published_time: '[node:created]'
+  canonical_url: '[site:url]'
+  description: '[node:field_teaser_text]'
+  image_src: '[node:field_image:entity:field_media_image]'
+  og_country_name: Ireland
+  og_description: '[node:field_teaser_text]'
+  og_image: '[node:field_image:entity:field_media_image]'
+  og_image_alt: '[node:field_image:entity:field_media_image:alt]'
+  og_image_secure_url: '[node:field_image:entity:field_media_image]'
+  og_region: Galway
+  og_title: '[current-page:title] | [site:name]'
+  og_updated_time: '[node:updated]'
+  og_url: '[site:url]'
+  shortlink: '[site:url]'
