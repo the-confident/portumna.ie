@@ -13,7 +13,6 @@ dependencies:
     - layout_builder
     - link
     - text
-    - viewsreference
 third_party_settings:
   layout_builder:
     enabled: false
@@ -33,7 +32,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_cl_content:
     type: text_trimmed
@@ -43,15 +42,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_cl_content_list:
-    type: viewsreference_formatter
-    label: hidden
-    settings:
-      plugin_types:
-        - block
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_cl_title:
     type: string
     label: hidden
@@ -60,4 +50,5 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_cl_content_list: true

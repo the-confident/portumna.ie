@@ -104,7 +104,16 @@
       {% endif %}
     {{ title_suffix }}
 
-    {{ content|without('field_banner', 'field_image') }}
+    {% if has_banner != TRUE and node.field_teaser_text.value %}
+      <div class="full-page__intro">
+        {{ content.field_teaser_text }}
+      </div>
+    {% endif %}
+
+    {% block main_content %}
+      {{ content|without('field_banner', 'field_image', 'field_teaser_text') }}
+    {% endblock %}
+
   </div>
 
 </article>

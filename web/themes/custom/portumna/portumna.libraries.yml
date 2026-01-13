@@ -50,3 +50,13 @@ banner:
   css:
     theme:
       css/components/banner.css: {}
+
+shared-components:
+  css:
+    theme:
+      css/components/shared-components.css: {}
+
+image-with-text:
+  css:
+    theme:
+      css/components/image-with-text.css: {}

@@ -1,0 +1,35 @@
+{% extends "@portumna/content/node--full.html.twig" %}
+
+{% set social_media_fields = [] %}
+
+{% for field_name in ['field_facebook', 'field_tiktok', 'field_instagram', 'field_linkedin', 'field_youtube'] %}
+	{% if attribute(node, field_name).value %}
+		{% set social_media_fields = social_media_fields|merge([content[field_name]]) %}
+	{% endif %}
+{% endfor %}
+
+{% block main_content %}
+	{{ content.body }}
+
+	{{ content.field_address }}
+	{{ content.field_phone_number }}
+	{{ content.field_email_address }}
+	{{ content.field_website }}
+
+	{% if social_media_fields|length > 0 %}
+		<ul class="full-page__social-media-list">
+			{% for field in social_media_fields %}
+				{% set field_url = field.0['#url'].uri %}
+				{% set field_name = field['#field_name']|replace({'field_': ''}) %}
+				<li>
+					<a href="{{ field_url }}">
+						<span class="full-page__social-media-list-icon">{% include directory ~ "/assets/images/icons/font-awesome/" ~ field_name ~ ".svg" %}</span>
+						<span>{{ field_name }}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+	{{ content|without('body', 'field_banner', 'field_image', 'field_teaser_text', 'field_address', 'field_phone_number', 'field_email_address', 'field_website', 'field_facebook', 'field_tiktok', 'field_instagram', 'field_linkedin', 'field_youtube') }}
+{% endblock %}

@@ -4,11 +4,16 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.image_with_text.field_call_to_action
     - field.field.paragraph.image_with_text.field_iwt_content
     - field.field.paragraph.image_with_text.field_iwt_image
+    - field.field.paragraph.image_with_text.field_iwt_title
+    - image.style.medium
     - paragraphs.paragraphs_type.image_with_text
   module:
     - layout_builder
+    - link
+    - media
     - text
 third_party_settings:
   layout_builder:
@@ -19,6 +24,18 @@ targetEntityType: paragraph
 bundle: image_with_text
 mode: preview
 content:
+  field_call_to_action:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_iwt_content:
     type: text_trimmed
     label: hidden
@@ -28,12 +45,15 @@ content:
     weight: 1
     region: content
   field_iwt_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: media_library
-      link: false
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  field_iwt_title: true
