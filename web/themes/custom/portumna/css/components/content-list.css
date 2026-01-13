@@ -1,8 +1,3 @@
-.content-list {
-  padding-block: var(--spacing-xxx-large);
-  border-block-end: var(--border);
-}
-
 .content-list > * + * {
   margin-block-start: var(--spacing-xxx-large);
 }

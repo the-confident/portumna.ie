@@ -3,8 +3,10 @@
   padding-block-end: var(--spacing-xxx-large);
 }
 
-.full-page__content > * + * {
+.full-page__content .field--name-field-content-blocks > * + * {
   margin-block-start: var(--spacing-xxx-large);
+  padding-block-start: var(--spacing-xxx-large);
+  border-block-start: var(--border);
 }
 
 .full-page:not(.full-page--listing-page) .full-page__content {
