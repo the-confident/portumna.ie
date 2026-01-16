@@ -34,3 +34,22 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.logos-wall {
+  padding-block: var(--spacing-gap);
+  background-color: var(--color-grey-lightest);
+}
+
+.logos-wall ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-gap);
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logos-wall img {
+  height: 50px;
+}
