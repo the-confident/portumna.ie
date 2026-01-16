@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.event.body
     - field.field.node.event.field_banner
+    - field.field.node.event.field_call_to_action
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_readable
     - field.field.node.event.field_image
@@ -13,6 +14,7 @@ dependencies:
     - node.type.event
   module:
     - datetime
+    - link
     - media_library
     - paragraphs
     - text
@@ -23,7 +25,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 6
+    weight: 7
     region: content
     settings:
       rows: 9
@@ -51,6 +53,14 @@ content:
         convert: '0'
         duplicate: duplicate
     third_party_settings: {  }
+  field_call_to_action:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   field_event_date:
     type: datetime_default
     weight: 3
@@ -74,7 +84,7 @@ content:
     third_party_settings: {  }
   field_photo_credits:
     type: string_textarea
-    weight: 7
+    weight: 8
     region: content
     settings:
       rows: 5
@@ -82,7 +92,7 @@ content:
     third_party_settings: {  }
   field_teaser_text:
     type: string_textarea
-    weight: 5
+    weight: 6
     region: content
     settings:
       rows: 5
@@ -90,7 +100,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true

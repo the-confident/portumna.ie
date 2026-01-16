@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.event.body
     - field.field.node.event.field_banner
+    - field.field.node.event.field_call_to_action
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_readable
     - field.field.node.event.field_image
@@ -35,6 +36,7 @@ content:
     region: content
 hidden:
   field_banner: true
+  field_call_to_action: true
   field_event_date: true
   field_event_date_readable: true
   field_image: true

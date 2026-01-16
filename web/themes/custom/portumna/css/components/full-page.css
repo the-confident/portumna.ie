@@ -3,6 +3,10 @@
   padding-block-end: var(--spacing-xxx-large);
 }
 
+.full-page__content > * + * {
+  margin-block-start: var(--spacing-xxx-large);
+}
+
 .full-page__content .field--name-field-content-blocks > * + * {
   margin-block-start: var(--spacing-xxx-large);
   padding-block-start: var(--spacing-xxx-large);

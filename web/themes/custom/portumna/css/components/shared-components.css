@@ -5,7 +5,8 @@
 */
 
 .image-with-text__content a,
-.content-list__call-to-action a {
+.content-list__call-to-action a,
+.field--name-field-call-to-action a {
   display: inline-block;
   background-color: var(--color-accent);
   color: var(--color-white);
