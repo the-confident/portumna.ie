@@ -64,12 +64,26 @@ input,
 button,
 textarea,
 select {
-  font-family: inherit;
-  font-size: inherit;
+  font: inherit;
   border-radius: 0;
   background-color: var(--color-white);
   padding: var(--spacing-small) var(--spacing);
   border: var(--border);
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  font-weight: bold;
+  border: var(--border-accent);
+  &:focus-visible,
+  &:hover {
+    background-color: var(--color-accent-2);
+  }
 }
 
 a {

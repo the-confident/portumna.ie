@@ -54,3 +54,27 @@
 .full-page__social-media-list svg {
   width: var(--spacing-x-large);
 }
+
+.views-exposed-form {
+  margin-block-end: var(--spacing-gap);
+}
+
+.views-exposed-form .form--inline {
+  display: flex;
+  gap: var(--spacing-large);
+  flex-wrap: wrap;
+}
+
+.views-exposed-form .form-item {
+  margin-block: 0;
+}
+
+.views-exposed-form .form-actions {
+  align-self: flex-end;
+  margin-block: 0;
+}
+
+.views-exposed-form label {
+  display: block;
+  font-weight: bold;
+}
