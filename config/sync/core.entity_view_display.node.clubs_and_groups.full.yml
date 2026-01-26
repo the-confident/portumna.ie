@@ -1,23 +1,23 @@
-uuid: 06add3ba-3428-44fd-90ef-d668fdd97791
+uuid: f4e4913e-d8a3-4155-8c84-d4e3c9f484a0
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.places_to_visit.body
-    - field.field.node.places_to_visit.field_banner
-    - field.field.node.places_to_visit.field_image
-    - field.field.node.places_to_visit.field_photo_credits
-    - field.field.node.places_to_visit.field_site_section
-    - field.field.node.places_to_visit.field_teaser_text
-    - node.type.places_to_visit
+    - field.field.node.clubs_and_groups.body
+    - field.field.node.clubs_and_groups.field_banner
+    - field.field.node.clubs_and_groups.field_image
+    - field.field.node.clubs_and_groups.field_photo_credits
+    - field.field.node.clubs_and_groups.field_site_section
+    - field.field.node.clubs_and_groups.field_teaser_text
+    - node.type.clubs_and_groups
   module:
     - entity_reference_revisions
     - text
     - user
-id: node.places_to_visit.full
+id: node.clubs_and_groups.full
 targetEntityType: node
-bundle: places_to_visit
+bundle: clubs_and_groups
 mode: full
 content:
   body:

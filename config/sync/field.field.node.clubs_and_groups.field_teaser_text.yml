@@ -1,0 +1,19 @@
+uuid: ad1197dd-148a-4a28-9524-2bcefee6f2f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_text
+    - node.type.clubs_and_groups
+id: node.clubs_and_groups.field_teaser_text
+field_name: field_teaser_text
+entity_type: node
+bundle: clubs_and_groups
+label: 'Teaser Text'
+description: 'This field is used at the top of the page, in listing pages, and also when the page is shared on social media or appears in search results (e.g. in Google).'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

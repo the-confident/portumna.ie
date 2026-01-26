@@ -1,0 +1,29 @@
+uuid: 6169860c-43df-49b0-b3d0-bbfd6ac42e88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_site_section
+    - node.type.clubs_and_groups
+    - taxonomy.vocabulary.site_section
+id: node.clubs_and_groups.field_site_section
+field_name: field_site_section
+entity_type: node
+bundle: clubs_and_groups
+label: 'Site Section'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      site_section: site_section
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

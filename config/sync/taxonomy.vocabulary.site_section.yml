@@ -1,0 +1,9 @@
+uuid: 6cf30244-98ff-40ae-8cef-ee590e2ee1dd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Site Section'
+vid: site_section
+description: null
+weight: 0
+new_revision: false

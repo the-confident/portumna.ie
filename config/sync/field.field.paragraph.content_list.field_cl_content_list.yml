@@ -29,6 +29,10 @@ settings:
     events: events
     news: news
     places_to_visit: places_to_visit
+    site_section_do_business: site_section_do_business
+    site_section_enjoy: site_section_enjoy
+    site_section_learn: site_section_learn
+    site_section_live: site_section_live
     things_to_do: things_to_do
   enabled_settings: {  }
 field_type: viewsreference

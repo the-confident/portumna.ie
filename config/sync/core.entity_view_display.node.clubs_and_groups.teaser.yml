@@ -1,21 +1,21 @@
-uuid: ceac6b1d-9165-47cc-bdd4-c5db37ffa97a
+uuid: 90ad4c29-2dd8-46d6-8e96-61c0faa1334b
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.places_to_visit.body
-    - field.field.node.places_to_visit.field_banner
-    - field.field.node.places_to_visit.field_image
-    - field.field.node.places_to_visit.field_photo_credits
-    - field.field.node.places_to_visit.field_site_section
-    - field.field.node.places_to_visit.field_teaser_text
-    - node.type.places_to_visit
+    - field.field.node.clubs_and_groups.body
+    - field.field.node.clubs_and_groups.field_banner
+    - field.field.node.clubs_and_groups.field_image
+    - field.field.node.clubs_and_groups.field_photo_credits
+    - field.field.node.clubs_and_groups.field_site_section
+    - field.field.node.clubs_and_groups.field_teaser_text
+    - node.type.clubs_and_groups
   module:
     - user
-id: node.places_to_visit.teaser
+id: node.clubs_and_groups.teaser
 targetEntityType: node
-bundle: places_to_visit
+bundle: clubs_and_groups
 mode: teaser
 content:
   field_image:

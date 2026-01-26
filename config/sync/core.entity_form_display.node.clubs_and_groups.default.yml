@@ -1,22 +1,22 @@
-uuid: d15de624-2f86-4f24-b3fe-52f6c32137b9
+uuid: 90bb34de-5933-4455-a74c-993bbd9c7f9d
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.things_to_do.body
-    - field.field.node.things_to_do.field_banner
-    - field.field.node.things_to_do.field_image
-    - field.field.node.things_to_do.field_photo_credits
-    - field.field.node.things_to_do.field_site_section
-    - field.field.node.things_to_do.field_teaser_text
-    - node.type.things_to_do
+    - field.field.node.clubs_and_groups.body
+    - field.field.node.clubs_and_groups.field_banner
+    - field.field.node.clubs_and_groups.field_image
+    - field.field.node.clubs_and_groups.field_photo_credits
+    - field.field.node.clubs_and_groups.field_site_section
+    - field.field.node.clubs_and_groups.field_teaser_text
+    - node.type.clubs_and_groups
   module:
     - media_library
     - paragraphs
     - text
-id: node.things_to_do.default
+id: node.clubs_and_groups.default
 targetEntityType: node
-bundle: things_to_do
+bundle: clubs_and_groups
 mode: default
 content:
   body:

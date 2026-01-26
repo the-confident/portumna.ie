@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.things_to_do.field_banner
     - field.field.node.things_to_do.field_image
     - field.field.node.things_to_do.field_photo_credits
+    - field.field.node.things_to_do.field_site_section
     - field.field.node.things_to_do.field_teaser_text
     - node.type.things_to_do
   module:
@@ -59,4 +60,5 @@ content:
     weight: 2
     region: content
 hidden:
+  field_site_section: true
   links: true

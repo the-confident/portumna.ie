@@ -1,18 +1,18 @@
-uuid: 5be9e22a-fef9-4b4c-9869-1b9a9a55ba67
+uuid: f9685663-42ac-4fd3-aef8-5e1434419b41
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
     - filter.format.basic_html
-    - node.type.places_to_visit
+    - node.type.clubs_and_groups
   module:
     - text
-id: node.places_to_visit.body
+id: node.clubs_and_groups.body
 field_name: body
 entity_type: node
-bundle: places_to_visit
-label: 'About this place to visit'
+bundle: clubs_and_groups
+label: 'About this club/group'
 description: ''
 required: false
 translatable: false

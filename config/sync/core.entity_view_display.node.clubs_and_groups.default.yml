@@ -1,26 +1,25 @@
-uuid: c76d8f20-db4b-4fc4-8e4d-c5ff94c0a6c6
+uuid: 83acb1a3-b292-43eb-9a10-702ed15a75e7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.news.body
-    - field.field.node.news.field_banner
-    - field.field.node.news.field_image
-    - field.field.node.news.field_photo_credits
-    - field.field.node.news.field_published_date
-    - field.field.node.news.field_site_section
-    - field.field.node.news.field_teaser_text
-    - node.type.news
+    - field.field.node.clubs_and_groups.body
+    - field.field.node.clubs_and_groups.field_banner
+    - field.field.node.clubs_and_groups.field_image
+    - field.field.node.clubs_and_groups.field_photo_credits
+    - field.field.node.clubs_and_groups.field_site_section
+    - field.field.node.clubs_and_groups.field_teaser_text
+    - node.type.clubs_and_groups
   module:
     - user
-id: node.news.default
+id: node.clubs_and_groups.default
 targetEntityType: node
-bundle: news
+bundle: clubs_and_groups
 mode: default
 content:
   field_image:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -29,7 +28,7 @@ content:
     region: content
   field_teaser_text:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
@@ -38,6 +37,5 @@ hidden:
   body: true
   field_banner: true
   field_photo_credits: true
-  field_published_date: true
   field_site_section: true
   links: true

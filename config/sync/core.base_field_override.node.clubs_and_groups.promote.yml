@@ -1,0 +1,22 @@
+uuid: 6b44ce56-69ad-41f5-8b09-cc0d77b0d3ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.clubs_and_groups
+id: node.clubs_and_groups.promote
+field_name: promote
+entity_type: node
+bundle: clubs_and_groups
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

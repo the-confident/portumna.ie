@@ -1,0 +1,17 @@
+uuid: ff2a075c-9f2c-4ce8-97a1-b20bb1e6fbd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Clubs And Groups'
+type: clubs_and_groups
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

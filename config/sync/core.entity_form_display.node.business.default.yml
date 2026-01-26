@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.business.field_linkedin
     - field.field.node.business.field_phone_number
     - field.field.node.business.field_photo_credits
+    - field.field.node.business.field_site_section
     - field.field.node.business.field_teaser_text
     - field.field.node.business.field_tiktok
     - field.field.node.business.field_website
@@ -31,7 +32,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 14
+    weight: 15
     region: content
     settings:
       rows: 9
@@ -41,7 +42,7 @@ content:
     third_party_settings: {  }
   field_address:
     type: string_textarea
-    weight: 5
+    weight: 6
     region: content
     settings:
       rows: 5
@@ -49,7 +50,7 @@ content:
     third_party_settings: {  }
   field_banner:
     type: paragraphs
-    weight: 1
+    weight: 2
     region: content
     settings:
       title: Banner
@@ -69,13 +70,13 @@ content:
     third_party_settings: {  }
   field_business_type:
     type: options_buttons
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_email_address:
     type: email_default
-    weight: 7
+    weight: 8
     region: content
     settings:
       placeholder: ''
@@ -83,7 +84,7 @@ content:
     third_party_settings: {  }
   field_facebook:
     type: link_default
-    weight: 9
+    weight: 10
     region: content
     settings:
       placeholder_url: ''
@@ -91,52 +92,12 @@ content:
     third_party_settings: {  }
   field_image:
     type: media_library_widget
-    weight: 2
+    weight: 3
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_instagram:
-    type: link_default
-    weight: 10
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-  field_linkedin:
-    type: link_default
-    weight: 13
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-  field_phone_number:
-    type: string_textfield
-    weight: 8
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_photo_credits:
-    type: string_textarea
-    weight: 15
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_teaser_text:
-    type: string_textarea
-    weight: 4
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_tiktok:
     type: link_default
     weight: 11
     region: content
@@ -144,15 +105,45 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_website:
+  field_linkedin:
     type: link_default
-    weight: 6
+    weight: 14
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_youtube:
+  field_phone_number:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_photo_credits:
+    type: string_textarea
+    weight: 16
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_site_section:
+    type: options_buttons
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_teaser_text:
+    type: string_textarea
+    weight: 5
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_tiktok:
     type: link_default
     weight: 12
     region: content
@@ -160,9 +151,25 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+  field_website:
+    type: link_default
+    weight: 7
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_youtube:
+    type: link_default
+    weight: 13
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 16
+    weight: 17
     region: content
     settings:
       display_label: true

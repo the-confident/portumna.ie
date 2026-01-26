@@ -1,27 +1,21 @@
-uuid: 5de7a8a3-b343-489e-bf14-c00351306ab1
+uuid: 01cb877d-70e5-47e9-b0c9-5278854e1479
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.card
-    - field.field.node.news.body
-    - field.field.node.news.field_banner
-    - field.field.node.news.field_image
-    - field.field.node.news.field_photo_credits
-    - field.field.node.news.field_published_date
-    - field.field.node.news.field_site_section
-    - field.field.node.news.field_teaser_text
-    - node.type.news
+    - field.field.node.clubs_and_groups.body
+    - field.field.node.clubs_and_groups.field_banner
+    - field.field.node.clubs_and_groups.field_image
+    - field.field.node.clubs_and_groups.field_photo_credits
+    - field.field.node.clubs_and_groups.field_site_section
+    - field.field.node.clubs_and_groups.field_teaser_text
+    - node.type.clubs_and_groups
   module:
-    - layout_builder
     - user
-third_party_settings:
-  layout_builder:
-    enabled: false
-    allow_custom: false
-id: node.news.card
+id: node.clubs_and_groups.card
 targetEntityType: node
-bundle: news
+bundle: clubs_and_groups
 mode: card
 content:
   field_image:
@@ -44,6 +38,5 @@ hidden:
   body: true
   field_banner: true
   field_photo_credits: true
-  field_published_date: true
   field_site_section: true
   links: true
