@@ -1,0 +1,22 @@
+uuid: 47a25ffd-373c-4ef5-aed8-94ca98697b61
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_clubs_and_groups
+label: 'Node: Clubs and Groups'
+type: 'canonical_entities:node'
+pattern: '/clubs-and-groups/[node:title]'
+selection_criteria:
+  d94d3e46-a122-48e9-a87b-d8097fdb982a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d94d3e46-a122-48e9-a87b-d8097fdb982a
+    context_mapping:
+      node: node
+    bundles:
+      clubs_and_groups: clubs_and_groups
+selection_logic: and
+weight: -5
+relationships: {  }
