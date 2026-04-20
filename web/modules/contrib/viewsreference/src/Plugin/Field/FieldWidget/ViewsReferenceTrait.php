@@ -56,6 +56,11 @@ trait ViewsReferenceTrait {
         $element['target_id']['#default_value'] = $field_value['target_id'] ?? '';
         break;
 
+      case 'entity_autocomplete':
+        $view_selected_js_state = ['filled' => TRUE];
+        $ajax_event = 'autocompleteclose';
+        break;
+
       default:
         $view_selected_js_state = ['filled' => TRUE];
         $ajax_event = 'viewsreference-select';
