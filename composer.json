@@ -46,7 +46,8 @@
         "drupal/klaro": "^3.0",
         "drupal/stage_file_proxy": "^3.1",
         "drupal/paragraphs": "^1.19",
-        "drupal/viewsreference": "^2.0@beta"
+        "drupal/viewsreference": "^2.0@beta",
+        "drupal/twig_tweak": "^3.4"
     },
     "conflict": {
         "drupal/drupal": "*"

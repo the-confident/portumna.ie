@@ -1,0 +1,25 @@
+uuid: 0732c32c-0be2-44b8-bd61-a623003e4e92
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-media
+  module:
+    - system
+  theme:
+    - portumna
+id: portumna_socialmedia_2
+theme: portumna
+region: off_canvas
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-media'
+settings:
+  id: 'system_menu_block:social-media'
+  label: 'Social Media'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

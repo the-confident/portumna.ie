@@ -10,8 +10,8 @@ dependencies:
     - portumna
 id: portumna_socialmedia
 theme: portumna
-region: header
-weight: -7
+region: disabled
+weight: 0
 provider: null
 plugin: 'system_menu_block:social-media'
 settings:

@@ -51,9 +51,13 @@
   --border-style: solid;
   --border: var(--border-width) var(--border-style) var(--border-color);
   --border-accent-2: var(--border-width) var(--border-style) var(--color-accent-2);
-  --border-small: 1px var(--border-style) var(--border-color);
-  --border-small-white: 2px var(--border-style) var(--color-white);
+  --border-accent-3: var(--border-width) var(--border-style) var(--color-accent-3);
   --border-white: var(--border-width) var(--border-style) var(--color-white);
+  --border-small: 1px var(--border-style) var(--border-color);
+  --border-small-white: 1px var(--border-style) var(--color-white);
+  --border-small-accent: 1px var(--border-style) var(--color-accent);
+  --border-small-accent-2: 1px var(--border-style) var(--color-accent-2);
+  --border-small-accent-3: 1px var(--border-style) var(--color-accent-3);
 
   --transition-time: 0.3s;
 }

@@ -27,6 +27,10 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     {{ content }}
+    <div class="header__menus">
+      {{ drupal_entity('block', 'portumna_socialmedia') }}
+      {{ drupal_entity('block', 'portumna_main_menu') }}
+    </div>
     <div class="header__off-canvas-toggle">
       <button class="header__off-canvas-button" aria-label="{{ 'Toggle menu'|t }}" aria-expanded="false" aria-controls="off-canvas">
         {{ 'MENU'|t }}

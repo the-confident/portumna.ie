@@ -18,6 +18,11 @@
   transform: translateX(0);
 }
 
+.region-off-canvas {
+  display: grid;
+  min-height: calc(100vh - (var(--spacing) * 2));
+}
+
 .off-canvas__off-canvas-toggle {
   display: flex;
   justify-content: end;
@@ -52,4 +57,12 @@ button.off-canvas__off-canvas-button {
 
 .off-canvas .menu li + li {
   border-top: var(--border-small-white);
+}
+
+.off-canvas .menu--social-media {
+  margin-block-start: auto;
+}
+
+.off-canvas .menu--social-media .menu {
+  font-size: var(--font-size-smaller);
 }

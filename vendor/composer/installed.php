@@ -3,7 +3,7 @@
         'name' => 'markconroy/portumnaie',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'd36957bac36bdb4933cbb7d6166be6bd4e199ca0',
+        'reference' => 'b8bfe848450bd53e5b0b198952d8a0da93af3457',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -469,6 +469,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/twig_tweak' => array(
+            'pretty_version' => '3.4.2',
+            'version' => '3.4.2.0',
+            'reference' => '3.4.2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/twig_tweak',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/viewsreference' => array(
             'pretty_version' => '2.0.0-beta11',
             'version' => '2.0.0.0-beta11',
@@ -571,7 +580,7 @@
         'markconroy/portumnaie' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'd36957bac36bdb4933cbb7d6166be6bd4e199ca0',
+            'reference' => 'b8bfe848450bd53e5b0b198952d8a0da93af3457',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
