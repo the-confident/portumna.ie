@@ -17,6 +17,10 @@
   text-align: center;
 }
 
+.image-with-text__title {
+  font-weight: bolder;
+}
+
 .image-with-text .field--name-field-call-to-action a {
   box-shadow: var(--drop-shadow);
   &:focus-visible,

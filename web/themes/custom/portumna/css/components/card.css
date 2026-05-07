@@ -21,7 +21,6 @@
   font-size: var(--font-size-responsive-large);
 }
 .card__title a {
-  text-decoration: none;
   color: var(--color-black);
 }
 
