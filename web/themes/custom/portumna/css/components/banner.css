@@ -1,7 +1,7 @@
 .banner__content {
   font-weight: bold;
   padding: var(--spacing-xx-large);
-  background-color: var(--color-white);
+  background-color: var(--color-grey-lightest);
   border: var(--border);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   box-shadow: var(--drop-shadow);
