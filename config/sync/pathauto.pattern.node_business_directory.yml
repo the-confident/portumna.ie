@@ -2,6 +2,8 @@ uuid: 0a599fdb-4f99-4b22-9005-bf5423d206c1
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.business
   module:
     - node
 id: node_business_directory
@@ -12,7 +14,6 @@ selection_criteria:
   f96496d9-4d59-499d-ba07-2528a4be8fcf:
     id: 'entity_bundle:node'
     negate: false
-    uuid: f96496d9-4d59-499d-ba07-2528a4be8fcf
     context_mapping:
       node: node
     bundles:
