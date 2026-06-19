@@ -23,3 +23,5 @@ web/sites/default/services.yml
 *.sql.gz
 
 .env
+deploy.sh
+
