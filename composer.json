@@ -24,7 +24,7 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.9",
+        "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-security-advisories": "8.x-dev",
         "drupal/core-composer-scaffold": "^11",
@@ -104,7 +104,8 @@
             "hirak/prestissimo": true,
             "topfloor/composer-cleanup-vcs-dirs": true,
             "zaporylie/composer-drupal-optimizations": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "symfony/runtime": true
         }
     }
 }

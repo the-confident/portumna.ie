@@ -1,0 +1,129 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "mobile",
+      "width": 600,
+      "height": 800
+    },
+    {
+      "label": "desktop",
+      "width": 1440,
+      "height": 768
+    }
+  ],
+  "onBeforeScript": "onBefore.js",
+  "onReadyScript": "onReady.js",
+  "scenarioDefaults": {
+    "cookiePath": "backstop_data/engine_scripts/cookies.json",
+    "delay": 1000,
+    "hideSelectors": ["img", "video", "iframe"],
+    "removeSelectors": ["#klaro", "#klaro_toggle_dialog"],
+    "readyEvent": "",
+    "readySelector": "",
+    "hoverSelector": "",
+    "clickSelector": "",
+    "postInteractionWait": 0,
+    "selectors": [],
+    "selectorExpansion": true,
+    "expect": 0,
+    "misMatchThreshold" : 0.2,
+    "requireSameDimensions": true
+  },
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "http://portumna.ddev.site",
+      "referenceUrl": "https://portumna.ie/",
+      "hideSelectors": [".view-things-to-do"]
+    },
+    {
+      "label": "Live",
+      "url": "http://portumna.ddev.site/live",
+      "referenceUrl": "https://portumna.ie/live"
+    },
+    {
+      "label": "Learn",
+      "url": "http://portumna.ddev.site/learn",
+      "referenceUrl": "https://portumna.ie/learn"
+    },
+    {
+      "label": "Enjoy",
+      "url": "http://portumna.ddev.site/enjoy",
+      "referenceUrl": "https://portumna.ie/enjoy"
+    },
+    {
+      "label": "Do Business",
+      "url": "http://portumna.ddev.site/do-business",
+      "referenceUrl": "https://portumna.ie/do-business"
+    },
+    {
+      "label": "News",
+      "url": "http://portumna.ddev.site/news",
+      "referenceUrl": "https://portumna.ie/news"
+    },
+    {
+      "label": "Events",
+      "url": "http://portumna.ddev.site/events",
+      "referenceUrl": "https://portumna.ie/events"
+    },
+    {
+      "label": "News Page",
+      "url": "http://portumna.ddev.site/news/portumna-rugby-club-launches-the-final-maul",
+      "referenceUrl": "https://portumna.ie/news/portumna-rugby-club-launches-the-final-maul"
+    },
+    {
+      "label": "Events Page",
+      "url": "http://portumna.ddev.site/events/african-gospel-choir-and-portumna-choir",
+      "referenceUrl": "https://portumna.ie/events/african-gospel-choir-and-portumna-choir"
+    },
+    {
+      "label": "Business Page",
+      "url": "http://portumna.ddev.site/business-directory/the-confident",
+      "referenceUrl": "https://portumna.ie/business-directory/the-confident"
+    },
+    {
+      "label": "Place to Visit Page",
+      "url": "http://portumna.ddev.site/places-to-visit/mountshannon-a-lakeside-gem-on-lough-derg",
+      "referenceUrl": "https://portumna.ie/places-to-visit/mountshannon-a-lakeside-gem-on-lough-derg"
+    },
+    {
+      "label": "Thing to Do Page",
+      "url": "http://portumna.ddev.site/things-to-do/portumna-castle-and-gardens",
+      "referenceUrl": "https://portumna.ie/things-to-do/portumna-castle-and-gardens"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "bitmaps_reference",
+    "bitmaps_test": "bitmaps_test",
+    "engine_scripts": "engine_scripts",
+    "html_report": "html_report",
+    "ci_report": "ci_report"
+  },
+  "report": [
+    "browser",
+    "CI"
+  ],
+  "ci": {
+    "format" :  "junit" ,
+    "testSuiteName" :  "backstopJS"
+  },
+  "engine": "puppeteer",
+  "engineOptions": {
+    "ignoreHTTPSErrors": true,
+    "slowMo": 500,
+    "args": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-gpu",
+      "--force-device-scale-factor=1",
+      "--disable-infobars=true",
+      "--hide-scrollbars"
+    ]
+
+  },
+  "asyncCaptureLimit": 10,
+  "asyncCompareLimit": 30,
+  "debug": false,
+  "debugWindow": false
+}

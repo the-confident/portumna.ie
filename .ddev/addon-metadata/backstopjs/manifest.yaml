@@ -1,0 +1,11 @@
+name: backstopjs
+repository: Metadrop/ddev-backstopjs
+version: v2.9.0
+install_date: "2026-07-16T14:44:52+01:00"
+project_files:
+    - docker-compose.backstopjs.yaml
+    - backstopjsBuild/
+    - backstopjsFiles
+    - commands/
+global_files: []
+removal_actions: []

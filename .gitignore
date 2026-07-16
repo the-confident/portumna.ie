@@ -25,3 +25,7 @@ web/sites/default/services.yml
 .env
 deploy.sh
 
+tests/backstopjs/local/bitmaps_reference/
+tests/backstopjs/local/bitmaps_test/
+tests/backstopjs/local/html_report/
+tests/backstopjs/local/ci_report/

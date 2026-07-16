@@ -1,0 +1,35 @@
+#ddev-generated
+services:
+  backstopjs:
+    container_name: ddev-${DDEV_SITENAME}-backstopjs
+    build:
+      context: './backstopjsBuild'
+      args:
+        BASE_IMAGE: ${BACKSTOPJS_IMAGE:-ghcr.io/metadrop/aljibe-tools/backstopjs}:${BACKSTOPJS_VERSION:-6.3.25-base1.0.0}
+        username: $USER
+        uid: $DDEV_UID
+        gid: $DDEV_GID
+    image: ${BACKSTOPJS_IMAGE:-ghcr.io/metadrop/aljibe-tools/backstopjs}:${BACKSTOPJS_VERSION:-6.3.25-base1.0.0}-${DDEV_SITENAME}-built
+    user:  '$DDEV_UID:$DDEV_GID'
+    restart: "no"
+    # Add init to reap Chrome processes, as noted at
+    # https://github.com/puppeteer/puppeteer/blob/main/docs/troubleshooting.md#running-puppeteer-in-docker
+    init: true
+    shm_size: 1gb
+    environment:
+      DDEV_HOSTNAME: $DDEV_HOSTNAME
+      NODE_EXTRA_CA_CERTS: /mnt/ddev-global-cache/mkcert/rootCA.pem
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: ${DDEV_APPROOT}
+    entrypoint: [ /entrypoint.sh ]
+    volumes:
+      - ../tests/backstopjs:/src/tests
+      - .:/mnt/ddev_config:ro
+      - ddev-global-cache:/mnt/ddev-global-cache
+    networks: [default, ddev_default]
+    external_links:
+      - ddev-router:${DDEV_SITENAME}.${DDEV_TLD}
+  web:
+    links:
+      - backstopjs
