@@ -3,7 +3,7 @@
         'name' => 'markconroy/portumnaie',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'c13c2d9fef7b76068ea41bad864719499bcecb69',
+        'reference' => '23b7cea0445999208957b069f7c2816d9818a467',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -622,7 +622,7 @@
         'markconroy/portumnaie' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'c13c2d9fef7b76068ea41bad864719499bcecb69',
+            'reference' => '23b7cea0445999208957b069f7c2816d9818a467',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
